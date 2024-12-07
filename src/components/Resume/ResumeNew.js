@@ -1,64 +1,55 @@
 import React, { useState, useEffect } from "react";
-import achievement from '../../Assets/Projects/achi1.jpg'
-import achievement2 from '../../Assets/Projects/achi2.jpg'
-import achievement3 from '../../Assets/Projects/achi3.jpg'
-import background from '../../Assets/Projects/img13.jpg'
-import { Container } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import Particle from "../Particle";
-import Card from 'react-bootstrap/Card';
-import CardGroup from 'react-bootstrap/CardGroup';
+import pdf from "../../Assets/../Assets/rajat.pdf";
+import { AiOutlineDownload } from "react-icons/ai";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
+  useEffect(() => {
+    setWidth(window.innerWidth);
+  }, []);
+
   return (
     <div>
-      <Container fluid className="project-section">
+      <Container fluid className="resume-section">
         <Particle />
-        <CardGroup style={{ display: "flex", gap: "2rem", fontFamily: " Parkinsans, sans-serif" }}>
-          <Card style={{ backgroundColor: "" }}>
-            <Card.Img variant="top" src={achievement} style={{ height: "310px" }} />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "32px" }}>Policy Bazar</Card.Title>
-              <Card.Text>
-                Star Performer of the quarter Q4, 2023-2024.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 1 week ago</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src={achievement2} />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "32px" }}>Lenskart</Card.Title>
-              <Card.Text>
-                3rd Position in generating highest revenue in May 2022.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 1 week ago</small>
-            </Card.Footer>
-          </Card>
-          <Card>
-            <Card.Img variant="top" src={achievement3} />
-            <Card.Body>
-              <Card.Title style={{ fontSize: "32px" }}>Lenskart</Card.Title>
-              <Card.Text>
-                2nd Position during OJT in the April 2022.
-              </Card.Text>
-            </Card.Body>
-            <Card.Footer>
-              <small className="text-muted">Last updated 1 week ago</small>
-            </Card.Footer>
-          </Card>
-        </CardGroup>
-        );
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href="https://drive.google.com/file/d/18m1vESnpNp2yTOkMhBzhx9yQEJxxMnRI/view?usp=drivesdk"
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
 
+        <Row className="resume">
+          <Document file={pdf} className="d-flex justify-content-center">
+            <Page pageNumber={1} scale={width > 786 ? 1.7 : 0.6} />
+          </Document>
+        </Row>
 
-      </Container >
-    </div >
+        <Row style={{ justifyContent: "center", position: "relative" }}>
+          <Button
+            variant="primary"
+            href="https://drive.google.com/file/d/18m1vESnpNp2yTOkMhBzhx9yQEJxxMnRI/view?usp=drivesdk"
+            target="_blank"
+            style={{ maxWidth: "250px" }}
+          >
+            <AiOutlineDownload />
+            &nbsp;Download CV
+          </Button>
+        </Row>
+      </Container>
+    </div>
   );
 }
 
