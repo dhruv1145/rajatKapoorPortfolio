@@ -1,11 +1,14 @@
 import React from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import homeLogo from "../../Assets/home-main.svg";
+import { Container, Row, Col, Button } from "react-bootstrap";
+import homeLogo from "../../Assets/home-bg2.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import { useHistory } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 function Home() {
+
   return (
     <section>
       <Container fluid className="home-section" id="home">
@@ -13,7 +16,7 @@ function Home() {
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 10 }} className="heading">
                 Hi There!{" "}
                 <span className="wave" role="img" aria-labelledby="wave">
                   👋🏻
@@ -22,11 +25,15 @@ function Home() {
 
               <h1 className="heading-name">
                 I'M
-                <strong className="main-name"> SOUMYAJIT BEHERA</strong>
+                <strong className="main-name"> RAJAT KAPOOR</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
+              </div>
+              <div style={{ padding: 50 }}>
+                <Button variant="primary"
+                  style={{ maxWidth: "250px", padding: 12 }}>Download Cv</Button>
               </div>
             </Col>
 

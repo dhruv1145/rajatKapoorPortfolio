@@ -12,19 +12,19 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        communication skills
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        Active listening
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
+        Peruasive skills
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
+        problem solving
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        Adaptability
       </Col>
     </Row>
   );
