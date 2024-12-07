@@ -18,7 +18,7 @@ function Toolstack() {
         Active listening
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        Peruasive skills
+        Persuasive skills
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         Problem solving
