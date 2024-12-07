@@ -20,7 +20,7 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              am a results-driven professional with over 2.5 years of experience in domestic and international sales, excelling as a top-performing <span className="purple"> Associate Sales Consultant </span> and <span className="purple"> Fashion Consultant </span>. Skilled in driving growth, achieving sales targets, and managing teams, I bring strong market insights and effective communication to enhance performance.
+              I am a results-driven professional with over 2.5 years of experience in domestic and international sales, excelling as a top-performing <span className="purple"> Associate Sales Consultant </span> and <span className="purple"> Fashion Consultant </span>. Skilled in driving growth, achieving sales targets, and managing teams, I bring strong market insights and effective communication to enhance performance.
               <br />
               <br />
               Eager to embrace a new challenge, I aim to contribute to organizational success while continuing to refine my expertise in sales and client engagement. &nbsp;

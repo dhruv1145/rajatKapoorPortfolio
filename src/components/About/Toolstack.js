@@ -12,7 +12,7 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        communication skills
+        Communication skills
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         Active listening
@@ -21,7 +21,7 @@ function Toolstack() {
         Peruasive skills
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        problem solving
+        Problem solving
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         Adaptability
