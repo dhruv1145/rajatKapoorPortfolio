@@ -1,16 +1,17 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/home-bg2.png";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
-import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { Button } from "react-bootstrap";
 
 function Home() {
 
   return (
     <section>
+
       <Container fluid className="home-section" id="home">
         <Particle />
         <Container className="home-content">
@@ -31,11 +32,11 @@ function Home() {
               <div style={{ padding: 50, textAlign: "left" }}>
                 <Type />
               </div>
-              <div style={{ padding: 50 }}>
-                <Button variant="primary"
-                  style={{ maxWidth: "250px", padding: 12 }}>Download Cv</Button>
-              </div>
+
+
+
             </Col>
+
 
             <Col md={5} style={{ paddingBottom: 20 }}>
               <img
@@ -48,6 +49,9 @@ function Home() {
           </Row>
         </Container>
       </Container>
+
+
+
       <Home2 />
     </section>
   );
