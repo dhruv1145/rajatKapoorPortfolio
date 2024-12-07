@@ -14,6 +14,11 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+.achievement {
+  display: flex;
+  gap: 2rem;
+}
+
 button:focus {
   box-shadow: none !important;
 }
@@ -137,6 +142,11 @@ button:focus {
 }
 
 @media (max-width: 767px) {
+  .achievement {
+    display: flex;
+    flex-direction: column;
+  }
+
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
