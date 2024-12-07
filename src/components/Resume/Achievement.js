@@ -16,7 +16,7 @@ function Achievement() {
     <div>
       <Container fluid className="project-section">
         <Particle />
-        <h1 style={{ color: "white", marginBottom: "50px" }}>My Acjievements</h1>
+        <h1 style={{ color: "white", marginBottom: "50px" }}>My Achievements</h1>
         <CardGroup className="achievement" style={{ fontFamily: " Parkinsans, sans-serif" }}>
           <Card style={{ backgroundColor: "" }}>
             <Card.Img variant="top" src={achievement} style={{ height: "310px" }} />
